@@ -1,0 +1,133 @@
+/* Tipografias */
+
+@font-face {
+    font-family: "figtree_bold";
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: "figtree_italic";
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+}
+
+
+/* Estilos variables */
+
+:root {
+    --fuente_principal:"figtree_bold";
+    --fuente_principal_italic:"figtree_italic";
+    --tamanio_parrafo:16px;
+    --color_amarillo:hsl(47, 88%, 63%);
+    --color_blanco: hsl(0, 0%, 100%);
+    --color_gris-500:hsl(0, 0%, 42%);
+    --color_gris-950:hsl(0, 0%, 7%);
+}
+
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente_principal_italic);
+}
+
+/* Contenedor y body */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background: var(--color_amarillo);
+    min-height: 90vh;
+}
+
+.contenedor {
+    padding: 20px;
+    max-width: 430px;
+    background: var(--color_blanco);
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 0 black;
+    transition: all 0.5s ease;
+}
+
+
+.contenedor:hover {
+    box-shadow: 5px 5px 0 black;
+    cursor: pointer;
+}
+
+/* Seccion imagen */
+
+.contenedor> img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Seccion texto bajo imagen */
+
+.h2_titulo {
+    display: inline-block;
+    margin: 25px 0 25px 0;
+    background: var(--color_amarillo);
+    padding: 8px;
+    border-radius: 3px;
+    font-family: var(--fuente_principal);
+    font-size: 15px;
+}
+
+/* seccion de fecha de publicacion */
+
+.date_publish {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Seccion titulo carta */
+
+.titulo {
+    font-family: var(--fuente_principal);
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+/* texto seccion */
+
+.texto_seccion2 {
+    color: var(--color_gris-500);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* Estilos foto y nombre */
+
+.nombre_foto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nombre_foto img{
+    width: 40px;
+    height: 40px;
+}
+
+.nombre_foto p {
+    font-family: var(--fuente_principal);
+}
+
+
+
+/* Seccion creditos */
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);     
+}
